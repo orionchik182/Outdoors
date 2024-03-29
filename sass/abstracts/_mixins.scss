@@ -5,3 +5,10 @@
     clear: both;
   }
 }
+
+@mixin textColorGradient {
+	display: inline-block;
+		background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+		background-clip: text;
+		color: transparent;
+}
