@@ -1,5 +1,6 @@
 .header {
-  height: 95vh;
+  height: 75vh;
+	margin-bottom: 5rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -10,7 +11,11 @@
   background-position: top;
   position: relative;
 
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 90%);
+
+	@include respond(phone) {
+		clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 85%);
+	}
 
   &__logo-box {
     position: absolute;
