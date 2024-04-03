@@ -12,7 +12,7 @@
 
 		@include respond(tab-port) {
 			margin-bottom: $gutter-vertical-small;
-		}
+		}		
   }
 	
 
@@ -35,7 +35,11 @@
 			@include respond(tab-port) {
 				margin-right: 0;
 				margin-bottom: $gutter-vertical-small;
-			}			
+			}	
+
+			@include respond(phone) {
+				margin-bottom: $gutter-vertical-small-2;				
+			}		
     }
 
 		@include respond(tab-port) {
