@@ -45,3 +45,8 @@ body {
 a {
 	transition: all .3s;
 }
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}
